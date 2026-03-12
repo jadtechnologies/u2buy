@@ -1,0 +1,67 @@
+=== STORES ===
+[
+  {
+    "id": "cml18wpey000110iw8cy6x5lw",
+    "name": "GS Store",
+    "userId": "user_38zN77c8NItx1MNEG5xnlMXgYiC",
+    "status": "approved"
+  },
+  {
+    "id": "cml1t6dm5000365doy06257m8",
+    "name": "Brunthi",
+    "userId": "user_38eRSkOnKfZYtQWyXKgpfQvqzJ2",
+    "status": "approved"
+  },
+  {
+    "id": "cml1x6s0m0001ojn620osmmkw",
+    "name": "Brunthikka",
+    "userId": "user_390k5ANuofJ92xFNde7TyE5HSCL",
+    "status": "approved"
+  }
+]
+
+=== ORDERS ===
+[
+  {
+    "id": "cmlt54vs30001qtgqpj1kp3v8",
+    "storeId": "cml18wpey000110iw8cy6x5lw",
+    "total": 11996,
+    "status": "ORDER_PLACED",
+    "userId": "user_38eRSkOnKfZYtQWyXKgpfQvqzJ2"
+  }
+]
+
+=== PRODUCTS ===
+[
+  {
+    "id": "cmlkgtr390001ymy04ogk7ksi",
+    "storeId": "cml18wpey000110iw8cy6x5lw",
+    "name": "Smart watch white"
+  },
+  {
+    "id": "cmltb4ba00001qc140lq6jy99",
+    "storeId": "cml1t6dm5000365doy06257m8",
+    "name": "Headphone"
+  }
+]
+
+=== Store: GS Store (ID: cml18wpey000110iw8cy6x5lw) ===
+  UserId: user_38zN77c8NItx1MNEG5xnlMXgYiC
+  Status: approved
+  Products: 1
+  Orders: 1
+  Total Earnings: 11996
+
+=== Store: Brunthi (ID: cml1t6dm5000365doy06257m8) ===
+  UserId: user_38eRSkOnKfZYtQWyXKgpfQvqzJ2
+  Status: approved
+  Products: 1
+  Orders: 0
+  Total Earnings: 0
+
+=== Store: Brunthikka (ID: cml1x6s0m0001ojn620osmmkw) ===
+  UserId: user_390k5ANuofJ92xFNde7TyE5HSCL
+  Status: approved
+  Products: 0
+  Orders: 0
+  Total Earnings: 0
