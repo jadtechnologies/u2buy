@@ -1,0 +1,33 @@
+﻿node.exe : Retrieving 
+projectΓÇª
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (Retrievin  
+  g projectΓÇª:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+Deploying 
+jadtechnologies-projects/u2buy
+Uploading 
+[--------------------] 
+(0.0B/1.2KB)
+Uploading 
+[====================] 
+(1.2KB/1.2KB)
+Inspect: https://vercel.com/ja
+dtechnologies-projects/u2buy/5
+cCX3WdtntUTXDvTgzZZ5aYWhtYT 
+[4s]
+Preview: https://u2buy-46k6qmy
+mv-jadtechnologies-projects.ve
+rcel.app [4s]
+Building...

@@ -1,0 +1,50 @@
+node.exe : Retrieving 
+project???
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (Retrievin  
+  g project???:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+Fetching deployments in 
+jadtechnologies-projects
+> Deployments for jadtechnolog
+ies-projects/u2buy [357ms]
+
+  Age     Project             
+               Deployment     
+                              
+                   Status     
+ Environment     Duration     
+Username                   
+  1m      jadtechnologies-proj
+ects/u2buy     https://u2buy-4
+6k6qmymv-jadtechnologies-proje
+cts.vercel.app     ??? Error  
+   Preview         54s        
+  digitalexpertsjad-9570     
+  2m      jadtechnologies-proj
+ects/u2buy     https://u2buy-l
+1gpudb3y-jadtechnologies-proje
+cts.vercel.app     ??? Error  
+   Preview         53s        
+  digitalexpertsjad-9570     
+https://u2buy-46k6qmymv-jadtechnologies-projects.vercel.app
+https://u2buy-l1gpudb3y-jadtechnologies-projects.vercel.app
+https://u2buy-14mr3xwux-jadtechnologies-projects.vercel.app
+  4m      jadtechnologies-proj
+ects/u2buy     https://u2buy-1
+4mr3xwux-jadtechnologies-proje
+cts.vercel.app     ??? Error  
+   Production      51s        
+  digitalexpertsjad-9570     
+

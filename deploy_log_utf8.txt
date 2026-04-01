@@ -1,0 +1,156 @@
+﻿node.exe : Retrieving 
+projectΓÇª
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (Retrievin  
+  g projectΓÇª:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+Deploying 
+jadtechnologies-projects/u2buy
+Uploading 
+[--------------------] 
+(0.0B/2.1MB)
+Uploading 
+[=====---------------] 
+(549.2KB/2.1MB)
+Uploading 
+[==========----------] 
+(1.1MB/2.1MB)
+Uploading 
+[===============-----] 
+(1.6MB/2.1MB)
+Uploading 
+[====================] 
+(2.1MB/2.1MB)
+Inspect: https://vercel.com/ja
+dtechnologies-projects/u2buy/8
+QYXSkUvuXKsww5Y4QAxvuHpcT6Y 
+[8s]
+Production: https://u2buy-14mr
+3xwux-jadtechnologies-projects
+.vercel.app [8s]
+Building...
+Building...
+Building: Running build in 
+Washington, D.C., USA (East) 
+ΓÇô iad1
+Building: Build machine 
+configuration: 2 cores, 8 GB
+Building: Retrieving list of 
+deployment files...
+Building: Previous build 
+caches not available.
+Building: Downloading 145 
+deployment files...
+Building: Running "vercel 
+build"
+Building: Vercel CLI 50.28.0
+Building: Installing 
+dependencies...
+Building: npm warn deprecated 
+serialize-error-cjs@0.1.4: 
+Rolling release, please 
+update to 0.2.0
+Building: npm warn deprecated 
+imagekit@6.0.0: Please use 
+@imagekit/nodejs
+Building: added 331 packages 
+in 17s
+Building: 32 packages are 
+looking for funding
+Building: run `npm fund` for 
+details
+Building: Detected Next.js 
+version: 15.5.11
+Building: Running "npm run 
+build"
+Building: > gocart@0.1.0 build
+Building: > prisma generate 
+&& next build
+Building: Prisma schema 
+loaded from 
+prisma/schema.prisma
+Building: Γ£ö Generated 
+Prisma Client (v5.11.0) to 
+./node_modules/@prisma/client 
+in 96ms
+Building: Start using Prisma 
+Client in Node.js (See: 
+https://pris.ly/d/client)
+Building: ```
+Building: import { 
+PrismaClient } from 
+'@prisma/client'
+Building: const prisma = new 
+PrismaClient()
+Building: ```
+Building: or start using 
+Prisma Client at the edge 
+(See: 
+https://pris.ly/d/accelerate)
+Building: ```
+Building: import { 
+PrismaClient } from 
+'@prisma/client/edge'
+Building: const prisma = new 
+PrismaClient()
+Building: ```
+Building: See other ways of 
+importing Prisma Client: http:
+//pris.ly/d/importing-client
+Building: ΓöîΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÉ
+Building: Γöé  Deploying your 
+app to serverless or edge 
+functions?        Γöé
+Building: Γöé  Try Prisma 
+Accelerate for connection 
+pooling and caching.  Γöé
+Building: Γöé  https://pris.ly
+/cli/accelerate               
+              Γöé
+Building: ΓööΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÇΓö
+ÇΓöÇΓöÇΓöÇΓöÇΓöÇΓöÿ
+Building: Attention: Next.js 
+now collects completely 
+anonymous telemetry regarding 
+usage.
+Building: This information is 
+used to shape Next.js' 
+roadmap and prioritize 
+features.
+Building: You can learn more, 
+including how to opt-out if 
+you'd not like to participate 
+in this anonymous program, by 
+visiting the following URL:
+Building: 
+https://nextjs.org/telemetry
+Building: Γû▓ Next.js 15.5.11
+Building: Creating an 
+optimized production build ...
+Building: ΓÜá Mismatching 
+@next/swc version, detected: 
+15.5.7 while Next.js is on 
+15.5.11. Please ensure these 
+match

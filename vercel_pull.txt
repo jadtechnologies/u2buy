@@ -1,0 +1,7 @@
+Retrieving project…
+> Downloading `production` Environment Variables for jadtechnologies-projects/u2buy
+Downloading
+Created .vercel\.env.production.local file  [364ms]
+
+> Downloading project settings
+Downloaded project settings to ~\Desktop\u2buy\.vercel\project.json [0ms]

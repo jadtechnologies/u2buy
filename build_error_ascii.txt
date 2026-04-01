@@ -1,0 +1,28 @@
+
+> gocart@0.1.0 build
+> prisma generate && next build
+
+Prisma schema loaded from prisma\schema.prisma
+node.exe : Error: 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (Error: :S  
+  tring) [], RemoteExceptio   
+ n
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+EPERM: operation not 
+permitted, unlink 'C:\Users\SH
+ATHULAX\Desktop\u2buy\node_mod
+ules\.prisma\client\query_engi
+ne-windows.dll.node'
+
+

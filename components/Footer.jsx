@@ -35,7 +35,7 @@ const Footer = () => {
             title: "CONTACT",
             links: [
                 { text: "+94 775728376", path: '/', icon: MailIcon },
-                { text: "digita;expertsjad@gmail.com", path: '/', icon: PhoneIcon },
+                { text: "digitalexpertsjad@gmail.com", path: '/', icon: PhoneIcon },
                 { text: "No54 Palali Road Thirunelveli Jaffna", path: '/', icon: MapPinIcon }
             ]
         }
