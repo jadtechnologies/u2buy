@@ -1,10 +1,10 @@
 "use client";
-import { PackageIcon, PlusIcon, Search, ShoppingCart } from "lucide-react";
+import { PackageIcon, PlusIcon, Search, ShoppingCart, Menu, X, UserIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { useUser, useClerk, UserButton } from "@clerk/nextjs";
+import { useUser, useClerk, UserButton, SignInButton } from "@clerk/nextjs";
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 
@@ -14,6 +14,7 @@ const Navbar = () => {
   const router = useRouter();
 
   const [search, setSearch] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { total: cartCount, isPlus } = useSelector((state) => state.cart);
 
   const handleSearch = (e) => {
@@ -29,7 +30,7 @@ const Navbar = () => {
             href="/"
             className="flex items-center gap-2"
           >
-            <Image src={assets.logo} alt="logo" className="h-25 w-25 object-contain w-auto" />
+            <Image src={assets.logo} alt="logo" className="h-10 w-auto object-contain" />
             {isPlus && <p className="absolute text-xs font-semibold -top-1 -right-8 px-3 p-0.5 rounded-full flex items-center gap-2 text-white bg-green-500">
               plus
             </p>}
@@ -70,12 +71,13 @@ const Navbar = () => {
             </Link>
 
             {!user ? (
-              <button
-                onClick={openSignIn}
-                className="px-8 py-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full"
-              >
-                Login
-              </button>
+              <SignInButton>
+                <button
+                  className="px-8 py-2 bg-indigo-500 hover:bg-indigo-600 transition text-white rounded-full cursor-pointer"
+                >
+                  Login
+                </button>
+              </SignInButton>
             ) : (
               <UserButton>
                 <UserButton.MenuItems>
@@ -94,8 +96,8 @@ const Navbar = () => {
                     )}
                   <UserButton.Action
                     labelIcon={<PlusIcon size={16} />}
-                    label="Add account"
-                    onClick={() => signOut(() => openSignIn())}
+                    label="Switch Account"
+                    onClick={() => signOut()}
                   />
                 </UserButton.MenuItems>
               </UserButton>
@@ -104,6 +106,17 @@ const Navbar = () => {
 
           {/* Mobile User Button  */}
           <div className="sm:hidden flex items-center gap-3">
+            {/* Mobile Cart Icon */}
+            <Link
+              href="/cart"
+              className="relative flex items-center text-slate-600 p-1"
+            >
+              <ShoppingCart size={20} />
+              <button className="absolute -top-1 -right-1 text-[8px] text-white bg-slate-600 size-3.5 rounded-full">
+                {cartCount}
+              </button>
+            </Link>
+
             {user ? (
               <UserButton>
                 <UserButton.MenuItems>
@@ -127,22 +140,41 @@ const Navbar = () => {
                     )}
                   <UserButton.Action
                     labelIcon={<PlusIcon size={16} />}
-                    label="Add account"
-                    onClick={() => signOut(() => openSignIn())}
+                    label="Switch Account"
+                    onClick={() => signOut()}
                   />
                 </UserButton.MenuItems>
               </UserButton>
             ) : (
-              <button
-                onClick={openSignIn}
-                className="px-7 py-1.5 bg-indigo-500 hover:bg-indigo-600 text-sm transition text-white rounded-full"
-              >
-                Login
-              </button>
+              <SignInButton>
+                <button
+                  className="text-slate-600 p-1 transition-colors hover:text-indigo-500 cursor-pointer"
+                >
+                  <UserIcon size={20} />
+                </button>
+              </SignInButton>
             )}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-slate-600 p-1 transition-colors hover:text-indigo-500"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="sm:hidden absolute top-[calc(100%+1px)] left-0 w-full bg-white flex flex-col gap-4 px-6 py-4 text-slate-600 z-50 shadow-md">
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+          <Link href="/shop" onClick={() => setIsMobileMenuOpen(false)}>Shop</Link>
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+          <Link href="/category" onClick={() => setIsMobileMenuOpen(false)}>Category</Link>
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+        </div>
+      )}
+      
       <hr className="border-gray-300" />
     </nav>
   );
