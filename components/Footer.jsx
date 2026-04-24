@@ -56,7 +56,7 @@ const Footer = () => {
                         <div className="mb-4">
                             <Image src={assets.logo} alt="u2buy logo" width={150} height={40} className="object-contain" />
                         </div>
-                        <p className="max-w-[410px] mt-6 text-sm">Welcome to u2buy, your ultimate destination for the latest and smartest gadgets. From smartphones and smartwatches to essential accessories, we bring you the best in innovation — all in one place.</p>
+                        <p className="max-w-[410px] mt-6 text-sm">Welcome to dilzo, your ultimate destination for the latest and smartest gadgets. From smartphones and smartwatches to essential accessories, we bring you the best in innovation — all in one place.</p>
                         <div className="flex items-center gap-3 mt-5">
                             {socialIcons.map((item, i) => (
                                 <Link href={item.link} key={i} className="flex items-center justify-center w-10 h-10 bg-slate-100 hover:scale-105 hover:border border-slate-300 transition rounded-full">
@@ -82,7 +82,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <p className="py-4 text-sm text-slate-500">
-                    Copyright 2026 © u2buy All Right Reserved.
+                    Copyright 2026 © dilzo All Right Reserved.
                 </p>
             </div>
         </footer>
